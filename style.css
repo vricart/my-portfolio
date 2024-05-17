@@ -231,6 +231,11 @@ a:hover {
     background: rgb(0, 0, 0);
 }
 
+.btn-color-2 {
+    color: var(--first-color);
+    border: var(--first-color) 0.1rem solid;
+}
+
 .btn-color-2:hover {
     background: var(--first-color);
     color: white;
@@ -838,6 +843,14 @@ footer p {
     footer {
         margin: 0 2.5rem;
         padding-bottom: 2vh;
+    }
+
+    .hover-target + .tile-info-popup {
+        display: none;
+    }
+
+    .hover-target.active + .tile-info-popup {
+        display: block;
     }
 }
 

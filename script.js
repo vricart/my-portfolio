@@ -32,3 +32,11 @@ function toggleNav() {
   }
 
   document.getElementById("menu-checkbox").addEventListener("change", toggleNav);
+
+
+  document.querySelectorAll('.hover-target').forEach(element => {
+    element.addEventListener('click', () => {
+        const popup = element.nextElementSibling;
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    });
+});
