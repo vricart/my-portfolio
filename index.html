@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vicky Ricart Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav" role="navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="#about"> About </a>
+          </li>
+          <li>
+            <a href="#skills"> Skills </a>
+          </li>
+          <li>
+            <a href="#projects"> Projects </a>
+          </li>
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
+        <div id="menuToggle">
+          <input type="checkbox" id="menu-checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <main>
+      <section id="profile">
+        <div class="section__tiles-container">
+          <div class="tiles-container">
+            <img
+              src="assets/tile-1.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-1.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-1.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-1.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-2.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-2.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-2.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-2.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-3.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-3.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-3.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-3.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-4.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-4.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-4.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+            <img
+              src="assets/tile-4.png"
+              alt="Tile Image"
+              class="tile-img"
+              onclick="getRandomTile(this)"
+            />
+          </div>
+          <div class="tiles-info-container">
+            <span class="section__sub-title question-mark hover-target">?</span>
+            <div class="tile-info-popup">
+              Click on each tile & create something new!
+            </div>
+          </div>
+        </div>
+        <div class="section__text">
+          <p class="section__sub-title">👋 👩🏻‍💻</p>
+          <h1 class="title typewriter">Hello, I'm Vicky!</h1>
+          <p class="section__text__p2">Developer & Designer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('assets/CV.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Me
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="assets/linkedin.png"
+              alt="My Linkedin Profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in//'"
+            />
+            <img
+              src="assets/github.png"
+              alt="My GitHub Profile"
+              class="icon"
+              onclick="location.href='https://github.com/'"
+            />
+          </div>
+        </div>
+        <img
+          src="assets/arrow.png"
+          alt="Arrow Icon"
+          class="icon arrow-left"
+          onclick="location.href='#about'"
+        />
+        <img
+          src="assets/arrow.png"
+          alt="Arrow Icon"
+          class="icon arrow-right"
+          onclick="location.href='#about'"
+        />
+        <img
+          src="./assets/arrow.png"
+          alt="Next Section"
+          class="icon middle-arrow"
+          onclick="location.href='#about'"
+        />
+      </section>
+
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section__about-container">
+          <div class="section__pic-container">
+            <img
+              src="assets/about-pic.png"
+              alt="Profile Picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <p class="about-text-p">
+              Once an boundless interior designer who discovered a new canvas in
+              the world of coding. Originally from the vibrant design hub of Los
+              Angeles, my journey has taken me from the art-rich streets of
+              Italy to the precision-oriented workspaces of Switzerland. Now,
+              I've found my home surrounded by the architectural marvels and
+              technological rhythm of Barcelona.
+            </p>
+          </div>
+        </div>
+        <img
+          src="assets/arrow.png"
+          alt="Arrow Icon"
+          class="icon arrow-left"
+          onclick="location.href='#skills'"
+        />
+        <img
+          src="assets/arrow.png"
+          alt="Arrow Icon"
+          class="icon arrow-right"
+          onclick="location.href='#skills'"
+        />
+        <img
+          src="./assets/arrow.png"
+          alt="Next Section"
+          class="icon middle-arrow"
+          onclick="location.href='#skills'"
+        />
+      </section>
+
+      <section id="skills">
+        <p class="section__text__p1">A Glimpse of My</p>
+        <h1 class="title">Skills & Toolkits</h1>
+        <div class="skills-details-container">
+          <ul class="skills-list-container">
+            <li>
+              <img src="assets/swift.png" alt="Skills Icon" class="icon" />
+              <p>SwiftUI</p>
+            </li>
+            <li>
+              <img src="assets/js.png" alt="Skills Icon" class="icon" />
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <img src="assets/html-5.png" alt="Skills Icon" class="icon" />
+              <p>HTML</p>
+            </li>
+            <li>
+              <img src="assets/css-3.png" alt="Skills Icon" class="icon" />
+              <p>CSS</p>
+            </li>
+            <li>
+              <img src="assets/science.png" alt="Skills Icon" class="icon" />
+              <p>React</p>
+            </li>
+            <li>
+              <img src="assets/node-js.png" alt="Skills Icon" class="icon" />
+              <p>Node.js</p>
+            </li>
+            <li>
+              <img src="assets/mongodb.png" alt="Skills Icon" class="icon" />
+              <p>MongoDB</p>
+            </li>
+            <li>
+              <img src="assets/firebase.png" alt="Skills Icon" class="icon" />
+              <p>Firebase</p>
+            </li>
+            <li>
+              <img src="assets/postgresql.png" alt="Skills Icon" class="icon" />
+              <p>PostgreSQL</p>
+            </li>
+            <li>
+              <img src="assets/git.png" alt="Skills Icon" class="icon" />
+              <p>Git</p>
+            </li>
+            <li>
+              <img src="assets/figma.png" alt="Skills Icon" class="icon" />
+              <p>Figma</p>
+            </li>
+            <li>
+              <img
+                src="assets/creative-cloud.png"
+                alt="Skills Icon"
+                class="icon"
+              />
+              <p>Adobe Createive</p>
+            </li>
+          </ul>
+        </div>
+        <img
+          src="assets/arrow.png"
+          alt="Arrow Icon"
+          class="icon arrow-left"
+          onclick="location.href='#projects'"
+        />
+        <img
+          src="assets/arrow.png"
+          alt="Arrow Icon"
+          class="icon arrow-right"
+          onclick="location.href='#projects'"
+        />
+        <img
+          src="./assets/arrow.png"
+          alt="Next Section"
+          class="icon middle-arrow"
+          onclick="location.href='#projects'"
+        />
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="container-projects">
+          <div class="section-containers projects-section-container">
+            <!-- Project 1 -->
+            <div class="border-container color-container">
+              <div class="project-container">
+                <img
+                  src="assets/HabitUs.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <p>
+                    A social media app designed to empower and inspire women
+                    globally. The user-friendly app allows individuals to share
+                    their thoughts, experiences, and creativity across a diverse
+                    range of preferred topics. Through seamless interaction
+                    features, users can engage with one another by commenting
+                    and expressing appreciation through likes.
+                  </p>
+                  <p>*Live Demo available only in mobile resolution.</p>
+                  <ul class="project-method-container">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </div>
+              </div>
+              <h2 class="skills-sub-title project-title">HabitUs</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com'"
+                >
+                  GitHub
+                </button>
+                <button
+                  class="btn btn-color-1"
+                  onclick="location.href='https://habit-us.netlify.app/?trk=public_profile_project-button'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="border-container color-container">
+              <div class="project-container">
+                <img
+                  src="assets/HabitUs.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <p>
+                    A social media app designed to empower and inspire women
+                    globally. The user-friendly app allows individuals to share
+                    their thoughts, experiences, and creativity across a diverse
+                    range of preferred topics. Through seamless interaction
+                    features, users can engage with one another by commenting
+                    and expressing appreciation through likes.
+                  </p>
+                  <p>*Live Demo available only in mobile resolution.</p>
+                  <ul class="project-method-container">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </div>
+              </div>
+              <h2 class="skills-sub-title project-title">HabitUs</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com'"
+                >
+                  GitHub
+                </button>
+                <button
+                  class="btn btn-color-1"
+                  onclick="location.href='https://habit-us.netlify.app/?trk=public_profile_project-button'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="border-container color-container">
+              <div class="project-container">
+                <img
+                  src="assets/HabitUs.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <p>
+                    A social media app designed to empower and inspire women
+                    globally. The user-friendly app allows individuals to share
+                    their thoughts, experiences, and creativity across a diverse
+                    range of preferred topics. Through seamless interaction
+                    features, users can engage with one another by commenting
+                    and expressing appreciation through likes.
+                  </p>
+                  <p>*Live Demo available only in mobile resolution.</p>
+                  <ul class="project-method-container">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </div>
+              </div>
+              <h2 class="skills-sub-title project-title">HabitUs</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com'"
+                >
+                  GitHub
+                </button>
+                <button
+                  class="btn btn-color-1"
+                  onclick="location.href='https://habit-us.netlify.app/?trk=public_profile_project-button'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="assets/arrow.png"
+          alt="Arrow Icon"
+          class="icon arrow-left"
+          onclick="location.href='#contact'"
+        />
+        <img
+          src="assets/arrow.png"
+          alt="Arrow Icon"
+          class="icon arrow-right"
+          onclick="location.href='#contact'"
+        />
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Feel free to drop me a message or just</p>
+        <h1 class="title">Say hello whenever you'd like! ✌️</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="assets/email.png"
+              alt="Email Icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:">Write Me</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="assets/linkedin.png"
+              alt="Email Icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &#169; 2023</p>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow-left up-arrow"
+        onclick="location.href='#profile'"
+      />
+      <img
+        src="assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow-right up-arrow"
+        onclick="location.href='#profile'"
+      />
+      <img
+        src="./assets/arrow.png"
+        alt="Top Section"
+        class="icon middle-arrow"
+        style="transform: rotate(180deg)"
+        onclick="location.href='#profile'"
+      />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
