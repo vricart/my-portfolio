@@ -13,6 +13,7 @@ const tileImageArr = [
     'tile-12.png'
 ];
 
+
 function getRandomTile(element) {
     const randomIndex = Math.floor(Math.random() * tileImageArr.length);
     const selectedTile = tileImageArr[randomIndex];
@@ -31,6 +32,7 @@ function toggleNav() {
     }
   }
 
+
   document.getElementById("menu-checkbox").addEventListener("change", toggleNav);
 
 
@@ -39,4 +41,12 @@ function toggleNav() {
         const popup = element.nextElementSibling;
         popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
     });
+});
+
+
+document.querySelectorAll('.project-img').forEach(image => {
+  image.addEventListener('click', () => {
+      const overlay = image.nextElementSibling;
+      overlay.style.opacity = overlay.style.opacity === '1' ? '0' : '1';
+  });
 });

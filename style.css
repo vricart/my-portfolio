@@ -521,7 +521,7 @@ section {
 }
 
 .project-btn {
-    color: black;
+    color: var(--first-color);
     border-color: var(--third-color);
 }
 
@@ -853,4 +853,18 @@ footer p {
         display: block;
     }
 }
+
+
+@media only screen and (max-width: 390px) {
+    .icon.middle-arrow {
+        display: none;
+      }
+      .icon.middle-arrow.last-middle-arrow {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  }
 
