@@ -50,3 +50,14 @@ document.querySelectorAll('.project-img').forEach(image => {
       overlay.style.opacity = overlay.style.opacity === '1' ? '0' : '1';
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const projectContainers = document.querySelectorAll('.project-container');
+
+  projectContainers.forEach(container => {
+      container.addEventListener('click', () => {
+          container.classList.toggle('show-overlay');
+      });
+  });
+});
