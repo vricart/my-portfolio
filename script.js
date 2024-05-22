@@ -53,18 +53,15 @@ document.querySelectorAll('.hover-target').forEach(element => {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const projectContainers = document.querySelectorAll('.project-container');
+document.querySelectorAll('.project-container').forEach(container => {
+  container.addEventListener('click', () => {
+    const img = container.querySelector('.project-img');
+    const overlay = container.querySelector('.project-overlay');
 
-  projectContainers.forEach(container => {
-      container.addEventListener('click', () => {
-          container.classList.toggle('show-overlay');
-          projectContainers.forEach(otherContainer => {
-              if (otherContainer !== container) {
-                  otherContainer.classList.remove('show-overlay');
-              }
-          });
-      });
+    if (container.classList.contains('show-overlay')) {
+      container.classList.remove('show-overlay');
+    } else {
+      container.classList.add('show-overlay');
+    }
   });
 });
-

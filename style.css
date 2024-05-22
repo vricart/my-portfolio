@@ -511,7 +511,7 @@ section {
     border-radius: 2rem;
     width: 280px;
     height: 280px;
-    transition: .5s ease;
+    transition: opacity 0.5s ease;
     backface-visibility: hidden;
 }
 
@@ -544,30 +544,7 @@ section {
     font-size: 0.8rem;
     line-height: 1.5;
     padding: 1rem;
-    width: 300px;
-}
-
-/* Overlay hidden by default */
-.project-container .project-overlay {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-/* Show overlay on hover (desktop) */
-.project-container:hover .project-overlay {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Show overlay when the class 'show-overlay' is added (mobile) */
-.project-container.show-overlay .project-overlay {
-    opacity: 1;
-    visibility: visible;
-}
-
-.project-container:hover .project-img {
-    opacity: 0.10;
+    width: 100%;
 }
 
 .project-method-container {
@@ -584,6 +561,17 @@ section {
     list-style-type: none;
     padding: 0.5rem;
     border-radius: 2rem;
+}
+
+.project-container:hover .project-overlay,
+.project-container.show-overlay .project-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-container:hover .project-img,
+.project-container.show-overlay .project-img {
+    opacity: 0.1;
 }
 
 /* CONTACT */
