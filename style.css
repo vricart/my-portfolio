@@ -852,19 +852,6 @@ footer p {
     .hover-target.active + .tile-info-popup {
         display: block;
     }
-
-    .project-overlay {
-        display: none;
-        opacity: 1;
-    }
-
-    .project-container.show-overlay .project-overlay {
-        display: flex;
-    }
-
-    .project-container.show-overlay .project-img {
-        opacity: 0.10;
-    }
 }
 
 
@@ -880,4 +867,3 @@ footer p {
         transform: translateX(-50%);
       }
   }
-
