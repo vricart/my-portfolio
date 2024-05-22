@@ -54,16 +54,17 @@ document.querySelectorAll('.hover-target').forEach(element => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-const projectContainers = document.querySelectorAll('.project-container');
+  const projectContainers = document.querySelectorAll('.project-container');
 
-projectContainers.forEach(container => {
-    container.addEventListener('click', () => {
-        container.classList.toggle('show-overlay');
-        projectContainers.forEach(otherContainer => {
-            if (otherContainer !== container) {
-                otherContainer.classList.remove('show-overlay');
-            }
-        });
-    });
+  projectContainers.forEach(container => {
+      container.addEventListener('click', () => {
+          container.classList.toggle('show-overlay');
+          projectContainers.forEach(otherContainer => {
+              if (otherContainer !== container) {
+                  otherContainer.classList.remove('show-overlay');
+              }
+          });
+      });
+  });
 });
-});
+
