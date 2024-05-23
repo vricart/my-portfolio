@@ -46,14 +46,14 @@
     </header>
 
     <div id="mySidenav" class="sidenav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" class="sidenav-link">About</a>
+      <a href="#skills" class="sidenav-link">Skills</a>
+      <a href="#projects" class="sidenav-link">Projects</a>
+      <a href="#contact" class="sidenav-link">Contact</a>
     </div>
 
     <main>
-      <section id="profile">
+      <section id="profile" class="fade-in">
         <div class="section__tiles-container">
           <div class="tiles-container">
             <img
@@ -180,13 +180,13 @@
               src="assets/linkedin.png"
               alt="My Linkedin Profile"
               class="icon"
-              onclick="location.href='https://www.linkedin.com/in//'"
+              onclick="window.open('https://www.linkedin.com/in/', '_blank')"
             />
             <img
               src="assets/github.png"
               alt="My GitHub Profile"
               class="icon"
-              onclick="location.href='https://github.com/'"
+              onclick="window.open('https://github.com/', '_blank')"
             />
           </div>
         </div>
@@ -210,7 +210,7 @@
         />
       </section>
 
-      <section id="about">
+      <section id="about" class="fade-in">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section__about-container">
@@ -252,7 +252,7 @@
         />
       </section>
 
-      <section id="skills">
+      <section id="skills" class="fade-in">
         <p class="section__text__p1">A Glimpse of My</p>
         <h1 class="title">Skills & Toolkits</h1>
         <div class="skills-details-container">
@@ -331,7 +331,7 @@
         />
       </section>
 
-      <section id="projects">
+      <section id="projects" class="fade-in">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="container-projects">
@@ -366,13 +366,13 @@
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com'"
+                  onclick="window.open('https://github.com/', '_blank')"
                 >
                   GitHub
                 </button>
                 <button
                   class="btn btn-color-1"
-                  onclick="location.href='https://habit-us.netlify.app/?trk=public_profile_project-button'"
+                  onclick="window.open('https://habit-us.netlify.app/?trk=public_profile_project-button', '_blank')"
                 >
                   Live Demo
                 </button>
@@ -409,13 +409,13 @@
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com'"
+                  onclick="window.open('https://github.com/', '_blank')"
                 >
                   GitHub
                 </button>
                 <button
                   class="btn btn-color-1"
-                  onclick="location.href='https://habit-us.netlify.app/?trk=public_profile_project-button'"
+                  onclick="window.open('https://habit-us.netlify.app/?trk=public_profile_project-button', '_blank')"
                 >
                   Live Demo
                 </button>
@@ -452,20 +452,18 @@
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com'"
+                  onclick="window.open('https://github.com/', '_blank')"
                 >
                   GitHub
                 </button>
                 <button
                   class="btn btn-color-1"
-                  onclick="location.href='https://habit-us.netlify.app/?trk=public_profile_project-button'"
+                  onclick="window.open('https://habit-us.netlify.app/?trk=public_profile_project-button', '_blank')"
                 >
                   Live Demo
                 </button>
               </div>
             </div>
-          </div>
-        </div>
         <img
           src="assets/arrow.png"
           alt="Arrow Icon"
@@ -480,7 +478,7 @@
         />
       </section>
 
-      <section id="contact">
+      <section id="contact" class="fade-in">
         <p class="section__text__p1">Feel free to drop me a message or just</p>
         <h1 class="title">Say hello whenever you'd like! ✌️</h1>
         <div class="contact-info-upper-container">
@@ -498,7 +496,7 @@
               alt="Email Icon"
               class="icon contact-icon"
             />
-            <p><a href="https://www.linkedin.com/in/">LinkedIn</a></p>
+            <p><a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a></p>
           </div>
         </div>
       </section>

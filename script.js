@@ -13,14 +13,12 @@ const tileImageArr = [
   'tile-12.png'
 ];
 
-
 function getRandomTile(element) {
   const randomIndex = Math.floor(Math.random() * tileImageArr.length);
   const selectedTile = tileImageArr[randomIndex];
   console.log(selectedTile);
   element.src = `./assets/${selectedTile}`;
 }
-
 
 function toggleNav() {
   const sidenav = document.getElementById("mySidenav");
@@ -32,35 +30,30 @@ function toggleNav() {
   }
 }
 
-
 document.getElementById("menu-checkbox").addEventListener("change", toggleNav);
-
 
 document.querySelectorAll('.sidenav-link').forEach(link => {
   link.addEventListener('click', () => {
-      const sidenav = document.getElementById("mySidenav");
-      const menuCheckbox = document.getElementById("menu-checkbox");
-      sidenav.style.width = "0";
-      menuCheckbox.checked = false;
+    const sidenav = document.getElementById("mySidenav");
+    const menuCheckbox = document.getElementById("menu-checkbox");
+    sidenav.style.width = "0";
+    menuCheckbox.checked = false;
   });
 });
 
 document.querySelectorAll('.hover-target').forEach(element => {
   element.addEventListener('click', () => {
-      const popup = element.nextElementSibling;
-      popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    const popup = element.nextElementSibling;
+    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
   });
 });
-
 
 document.querySelectorAll('.project-container').forEach(container => {
   container.addEventListener('click', (event) => {
     console.log("Tapped");
 
-    // Prevent event bubbling
     event.stopPropagation();
 
-    // Toggle the show-overlay class
     if (container.classList.contains('show-overlay')) {
       container.classList.remove('show-overlay');
     } else {
@@ -69,7 +62,6 @@ document.querySelectorAll('.project-container').forEach(container => {
   });
 });
 
-// Add a listener to close overlays when clicking outside
 document.addEventListener('click', () => {
   document.querySelectorAll('.project-container.show-overlay').forEach(container => {
     container.classList.remove('show-overlay');
@@ -77,15 +69,26 @@ document.addEventListener('click', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section');
 
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
 
-// document.querySelectorAll('.project-container').forEach(container => {
-//   container.addEventListener('click', (event) => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      } else {
+        entry.target.classList.remove('in-view');
+      }
+    });
+  }, observerOptions);
 
-//     if (container.classList.contains('show-overlay')) {
-//       container.classList.remove('show-overlay');
-//     }
-//   });
-// });
-
-
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+});
