@@ -54,10 +54,13 @@ document.querySelectorAll('.hover-target').forEach(element => {
 
 
 document.querySelectorAll('.project-container').forEach(container => {
-  container.addEventListener('click', () => {
-    const img = container.querySelector('.project-img');
-    const overlay = container.querySelector('.project-overlay');
+  container.addEventListener('click', (event) => {
+    console.log("Tapped");
 
+    // Prevent event bubbling
+    event.stopPropagation();
+
+    // Toggle the show-overlay class
     if (container.classList.contains('show-overlay')) {
       container.classList.remove('show-overlay');
     } else {
@@ -65,3 +68,24 @@ document.querySelectorAll('.project-container').forEach(container => {
     }
   });
 });
+
+// Add a listener to close overlays when clicking outside
+document.addEventListener('click', () => {
+  document.querySelectorAll('.project-container.show-overlay').forEach(container => {
+    container.classList.remove('show-overlay');
+  });
+});
+
+
+
+
+// document.querySelectorAll('.project-container').forEach(container => {
+//   container.addEventListener('click', (event) => {
+
+//     if (container.classList.contains('show-overlay')) {
+//       container.classList.remove('show-overlay');
+//     }
+//   });
+// });
+
+
