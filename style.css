@@ -426,9 +426,10 @@ section {
 }
 
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 50%;
     height: 300px;
     width: 300px;
+    object-fit: cover;
 }
 
 .about-details-container {
@@ -476,7 +477,7 @@ section {
 }
 
 .skills-list-container li p {
-    padding-top: 20px;
+    padding-top: 15px;
     margin: 0;
     color: var(--second-color);
 }
@@ -545,7 +546,7 @@ section {
     font-size: 0.8rem;
     line-height: 1.5;
     padding: 1rem;
-    width: 100%;
+    width: 280px;
 }
 
 .project-method-container {
@@ -856,7 +857,7 @@ footer p {
     }
 
     .skills-list-container li p {
-        padding-top: 15px;
+        padding-top: 5px;
     }
 
     #skills .skills-details-container {
