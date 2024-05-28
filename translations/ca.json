@@ -1,0 +1,24 @@
+{
+    "about": "Sobre mi",
+    "skills": "Habilitats",
+    "projects": "Projectes",
+    "contact": "Contacte",
+    "tile_info": "Feu clic a cada rajola i creeu alguna cosa nova!",
+    "hello": "Hola, sóc la Vicky!",
+    "developer_designer": "Desenvolupadora & Dissenyadora",
+    "download_cv": "Descarregar CV",
+    "contact_me": "Contacta'm",
+    "get_to_know": "Coneix més",
+    "about_me": "Sobre mi",
+    "about_me_text": "La meva formació és en disseny d'interiors i arquitectura, però vaig decidir aventurar-me en la programació i la vaig trobar increïblement gratificant. Originari de la diversa ciutat de Los Angeles, el meu viatge m'ha portat per les vibrants escenes artístiques d'Itàlia i la meticulosa artesania de Suïssa. Ara, m'inspira la vibrant escena tecnològica i la bella arquitectura de Barcelona. Vaig descobrir el meu interès per desenvolupar aplicacions mòbils amb SwiftUI i m'encanta donar vida als dissenys mitjançant codi. El meu viatge va començar amb un curs de UX i em va portar a Ironhack, on vaig abraçar tot el procés, des del concepte fins a la finalització. Quan no estic programant, em trobaràs explorant muntanyes, viatjant i tastant plats nous i deliciosos.",
+    "glimpse": "Una ullada a les meves",
+    "skills_toolkits": "Habilitats i eines",
+    "browse_recent": "Revisa els meus recents",
+    "project1_description": "Una aplicació de xarxes socials creada amb React i MongoDB per apoderar i inspirar les dones a nivell mundial. Les característiques inclouen compartir contingut, comentar i donar 'm'agrada', fomentant una comunitat de suport amb autenticació segura i actualitzacions en temps real.",
+    "project2_description": "Una aplicació de xarxes socials creada amb React i MongoDB per apoderar i inspirar les dones a nivell mundial. Les característiques inclouen compartir contingut, comentar i donar 'm'agrada', fomentant una comunitat de suport amb autenticació segura i actualitzacions en temps real.",
+    "project3_description": "Amb el meu primer desenvolupament de jocs, vaig crear un joc de memòria utilitzant HTML, CSS i JavaScript pur. Aquesta experiència interactiva està dissenyada per facilitar l'aprenentatge de vocabulari en anglès, català i espanyol.",
+    "feel_free": "No dubtis a deixar-me un missatge o simplement",
+    "say_hello": "Diga'm hola quan vulguis! ✌️",
+    "write_me": "Escriu-me"
+  }
+  

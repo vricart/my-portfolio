@@ -24,16 +24,26 @@
       <nav id="main-nav" role="navigation">
         <ul class="nav-links">
           <li>
-            <a href="#about"> About </a>
+            <a href="#about" data-key="about"> About </a>
           </li>
           <li>
-            <a href="#skills"> Skills </a>
+            <a href="#skills" data-key="skills"> Skills </a>
           </li>
           <li>
-            <a href="#projects"> Projects </a>
+            <a href="#projects" data-key="projects"> Projects </a>
           </li>
           <li>
-            <a href="#contact"> Contact </a>
+            <a href="#contact" data-key="contact"> Contact </a>
+          </li>
+          <li>
+            <div class="language-selector">
+              <select class="language-select">
+                <option value="en">EN</option>
+                <option value="es">ES</option>
+                <option value="ca">CA</option>
+                <option value="de">DE</option>
+              </select>
+            </div>
           </li>
         </ul>
         <div id="menuToggle">
@@ -46,10 +56,18 @@
     </header>
 
     <div id="mySidenav" class="sidenav">
-      <a href="#about" class="sidenav-link">About</a>
-      <a href="#skills" class="sidenav-link">Skills</a>
-      <a href="#projects" class="sidenav-link">Projects</a>
-      <a href="#contact" class="sidenav-link">Contact</a>
+      <a href="#about" class="sidenav-link" data-key="about">About</a>
+      <a href="#skills" class="sidenav-link" data-key="skills">Skills</a>
+      <a href="#projects" class="sidenav-link" data-key="projects">Projects</a>
+      <a href="#contact" class="sidenav-link" data-key="contact">Contact</a>
+      <div class="language-selector" id="sidenav-selector">
+        <select class="language-select">
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="ca">CA</option>
+          <option value="de">DE</option>
+        </select>
+      </div>
     </div>
 
     <main>
@@ -244,12 +262,6 @@
           class="icon arrow-right"
           onclick="location.href='#skills'"
         />
-        <img
-          src="./assets/arrow.png"
-          alt="Next Section"
-          class="icon middle-arrow"
-          onclick="location.href='#skills'"
-        />
       </section>
 
       <section id="skills" class="fade-in">
@@ -323,12 +335,6 @@
           class="icon arrow-right"
           onclick="location.href='#projects'"
         />
-        <img
-          src="./assets/arrow.png"
-          alt="Next Section"
-          class="icon middle-arrow"
-          onclick="location.href='#projects'"
-        />
       </section>
 
       <section id="projects" class="fade-in">
@@ -345,7 +351,7 @@
                   class="project-img"
                 />
                 <div class="project-overlay">
-                  <p>
+                  <p id="project1-description">
                     A social media app designed to empower and inspire women
                     globally. The user-friendly app allows individuals to share
                     their thoughts, experiences, and creativity across a diverse
@@ -379,7 +385,7 @@
               </div>
             </div>
 
-            <!-- Project 1 -->
+            <!-- Project 2 -->
             <div class="border-container color-container">
               <div class="project-container">
                 <img
@@ -388,7 +394,7 @@
                   class="project-img"
                 />
                 <div class="project-overlay">
-                  <p>
+                  <p id="project2-description">
                     A social media app designed to empower and inspire women
                     globally. The user-friendly app allows individuals to share
                     their thoughts, experiences, and creativity across a diverse
@@ -431,7 +437,7 @@
                   class="project-img"
                 />
                 <div class="project-overlay">
-                  <p>
+                  <p id="project3-description">
                     With my very first game development, I crafted a memory game utilizing HTML, CSS, and vanilla JavaScript. This interactive experience is designed to facilitate vocabulary learning in English, Catalan, and Spanish.
                   </p>
                   <p>*Live Demo available on desktop resolution.</p>
@@ -482,7 +488,7 @@
               alt="Email Icon"
               class="icon contact-icon email-icon"
             />
-            <p><a href="mailto:">Write Me</a></p>
+            <p><a href="mailto:" data-key="write_me">Write Me</a></p>
           </div>
           <div class="contact-info-container">
             <img

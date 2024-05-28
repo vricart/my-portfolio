@@ -92,3 +92,64 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const languageSelectors = document.querySelectorAll('.language-select');
+
+  function synchronizeSelectors(selectedLanguage) {
+    languageSelectors.forEach(selector => {
+      selector.value = selectedLanguage;
+    });
+  }
+
+  languageSelectors.forEach(selector => {
+    selector.addEventListener('change', (event) => {
+      const language = event.target.value;
+      synchronizeSelectors(language);
+      loadTranslations(language);
+    });
+  });
+
+  loadTranslations('en');
+});
+
+function loadTranslations(language) {
+  fetch(`translations/${language}.json`)
+    .then(response => response.json())
+    .then(translations => {
+      document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        if (translations[key]) {
+          element.textContent = translations[key];
+        }
+      });
+
+      // Section: PROFILE
+      document.querySelector('.tile-info-popup').textContent = translations['tile_info'];
+      document.querySelector('.title.typewriter').textContent = translations['hello'];
+      document.querySelector('.section__text__p2').textContent = translations['developer_designer'];
+      document.querySelector('.btn-container .btn-color-2').textContent = translations['download_cv'];
+      document.querySelector('.btn-container .btn-color-1').textContent = translations['contact_me'];
+      // Section: ABOUT
+      document.querySelector('#about .section__text__p1').textContent = translations['get_to_know'];
+      document.querySelector('#about .title').textContent = translations['about_me'];
+      document.querySelector('.about-text-p').textContent = translations['about_me_text'];
+      // Section: SKILLS
+      document.querySelector('#skills .section__text__p1').textContent = translations['glimpse'];
+      document.querySelector('#skills .title').textContent = translations['skills_toolkits'];
+      // Section: PROJECTS
+      document.querySelector('#projects .section__text__p1').textContent = translations['browse_recent'];
+      document.querySelector('#projects .title').textContent = translations['projects'];
+      document.querySelector('#project1-description').textContent = translations['project1_description'];
+      document.querySelector('#project2-description').textContent = translations['project2_description'];
+      document.querySelector('#project3-description').textContent = translations['project3_description'];
+      // Section: CONTACT
+      document.querySelector('#contact .section__text__p1').textContent = translations['feel_free'];
+      document.querySelector('#contact .title').textContent = translations['say_hello'];
+      
+    })
+    .catch(error => console.error('Error loading translations:', error));
+}
+
+

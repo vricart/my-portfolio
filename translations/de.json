@@ -1,0 +1,24 @@
+{
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "tile_info": "Klicken Sie auf jede Kachel und erstellen Sie etwas Neues!",
+    "hello": "Hallo, ich bin Vicky!",
+    "developer_designer": "Entwicklerin & Designerin",
+    "download_cv": "Lebenslauf herunterladen",
+    "contact_me": "Kontaktiere mich",
+    "get_to_know": "Erfahren Sie mehr",
+    "about_me": "Über mich",
+    "about_me_text": "Mein Hintergrund liegt in Innenarchitektur und Architektur, aber ich bin in die Programmierung eingestiegen und fand es unglaublich lohnend. Ursprünglich aus der vielfältigen Stadt Los Angeles stammend, führte mich mein Weg durch die künstlerischen Einflüsse Italiens und die Handwerkskunst der Schweiz. Jetzt inspiriert mich die Tech-Szene und die wunderschöne Architektur Barcelonas. Ich entdeckte mein Interesse an der Entwicklung von mobilen Apps mit SwiftUI und liebe es, Designs durch Code zum Leben zu erwecken. Meine Reise begann mit einem UX-Kurs und führte mich zu Ironhack, wo ich den gesamten Prozess von der Idee bis zur Fertigstellung schätzen lernte. Wenn ich nicht programmiere, findet man mich in den Bergen, auf Reisen oder beim Probieren neuer und leckerer Gerichte.",
+    "glimpse": "Ein Einblick in meine",
+    "skills_toolkits": "Fähigkeiten & Werkzeuge",
+    "browse_recent": "Durchsuchen Sie meine neuesten",
+    "project1_description": "Eine Social-Media-App, die mit React und MongoDB entwickelt wurde, um Frauen weltweit zu stärken und zu inspirieren. Zu den Funktionen gehören das Teilen von Inhalten, Kommentieren und Liken, um eine unterstützende Gemeinschaft zu fördern, mit sicherer Authentifizierung und Echtzeit-Updates.",
+    "project2_description": "Eine Social-Media-App, die mit React und MongoDB entwickelt wurde, um Frauen weltweit zu stärken und zu inspirieren. Zu den Funktionen gehören das Teilen von Inhalten, Kommentieren und Liken, um eine unterstützende Gemeinschaft zu fördern, mit sicherer Authentifizierung und Echtzeit-Updates.",
+    "project3_description": "Mit meiner allerersten Spieleentwicklung habe ich ein Memory-Spiel unter Verwendung von HTML, CSS und Vanilla JavaScript erstellt. Dieses interaktive Erlebnis ist darauf ausgelegt, das Vokabellernen in Englisch, Katalanisch und Spanisch zu erleichtern.",
+    "feel_free": "Fühlen Sie sich frei, mir eine Nachricht zu hinterlassen oder einfach nur",
+    "say_hello": "Sagen Sie hallo, wann immer Sie möchten! ✌️",
+    "write_me": "Schreib mir"
+  }
+  

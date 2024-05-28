@@ -1,0 +1,24 @@
+{
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "tile_info": "¡Haz clic en cada mosaico y crea algo nuevo!",
+    "hello": "¡Hola, soy Vicky!",
+    "developer_designer": "Desarrolladora & Diseñadora",
+    "download_cv": "Descargar CV",
+    "contact_me": "Contáctame",
+    "get_to_know": "Conoce más",
+    "about_me": "Sobre mí",
+    "about_me_text": "Mi formación es en diseño de interiores y arquitectura, pero me aventuré en la programación y lo encontré increíblemente gratificante. Originario de la diversa ciudad de Los Ángeles, mi viaje me ha llevado por las vibrantes escenas artísticas de Italia y la artesanía de Suiza. Ahora, me inspira la escena tecnológica y la hermosa arquitectura de Barcelona. Descubrí mi interés por desarrollar aplicaciones móviles con SwiftUI y me encanta dar vida a los diseños mediante código. Mi viaje comenzó con un curso de UX y me llevó a Ironhack, donde abracé todo el proceso, desde el concepto hasta la finalización. Cuando no estoy programando, me encontrarás explorando montañas, viajando y probando nuevos y deliciosos platos.",
+    "glimpse": "Un vistazo a mis",
+    "skills_toolkits": "Habilidades y herramientas",
+    "browse_recent": "Revisa mis recientes",
+    "project1_description": "Una aplicación de redes sociales creada con React y MongoDB para empoderar e inspirar a las mujeres a nivel mundial. Las características incluyen compartir contenido, comentar y dar 'me gusta', fomentando una comunidad de apoyo con autenticación segura y actualizaciones en tiempo real.",
+    "project2_description": "Una aplicación de redes sociales creada con React y MongoDB para empoderar e inspirar a las mujeres a nivel mundial. Las características incluyen compartir contenido, comentar y dar 'me gusta', fomentando una comunidad de apoyo con autenticación segura y actualizaciones en tiempo real.",
+    "project3_description": "Con mi primer desarrollo de juegos, creé un juego de memoria utilizando HTML, CSS y JavaScript puro. Esta experiencia interactiva está diseñada para facilitar el aprendizaje de vocabulario en inglés, catalán y español.",
+    "feel_free": "No dudes en dejarme un mensaje o simplemente",
+    "say_hello": "¡Di hola cuando quieras! ✌️",
+    "write_me": "Escríbeme"
+  }
+  
