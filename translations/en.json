@@ -14,9 +14,10 @@
     "glimpse": "A Glimpse of My",
     "skills_toolkits": "Skills & Toolkits",
     "browse_recent": "Browse My Recent",
-    "project1_description": "A Catalan and Spanish verb conjugation app designed for non-Spanish learners, built with SwiftUI in Xcode and powered by SQLite.",
-    "project2_description": "A social media app built with React and MongoDB to empower and inspire women globally. Features include content sharing, commenting, and liking, fostering a supportive community with secure authentication and real-time updates.",
-    "project3_description": "With my very first game development, I crafted a memory game utilizing HTML, CSS, and vanilla JavaScript. This interactive experience is designed to facilitate vocabulary learning in English, Catalan, and Spanish.",
+    "project1_description": "A task management app for iOS, built with SwiftUI and Firebase. Features user authentication, task creation and organization, and onboarding. Secured with cloud-based authentication and local data persistence.",
+    "project2_description": "A Catalan and Spanish verb conjugation app designed for non-Spanish learners, built with SwiftUI in Xcode and powered by SQLite.",
+    "project3_description": "A social media app built with React and MongoDB to empower and inspire women globally. Features include content sharing, commenting, and liking, fostering a supportive community with secure authentication and real-time updates.",
+    "project4_description": "With my very first game development, I crafted a memory game utilizing HTML, CSS, and vanilla JavaScript. This interactive experience is designed to facilitate vocabulary learning in English, Catalan, and Spanish.",
     "feel_free": "Feel free to drop me a message or just",
     "say_hello": "Say hello whenever you'd like! ✌️",
     "write_me": "Write Me"

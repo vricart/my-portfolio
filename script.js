@@ -144,6 +144,7 @@ function loadTranslations(language) {
       document.querySelector('#project1-description').textContent = translations['project1_description'];
       document.querySelector('#project2-description').textContent = translations['project2_description'];
       document.querySelector('#project3-description').textContent = translations['project3_description'];
+      document.querySelector('#project4-description').textContent = translations['project4_description'];
       // Section: CONTACT
       document.querySelector('#contact .section__text__p1').textContent = translations['feel_free'];
       document.querySelector('#contact .title').textContent = translations['say_hello'];
@@ -151,5 +152,4 @@ function loadTranslations(language) {
     })
     .catch(error => console.error('Error loading translations:', error));
 }
-
 

@@ -14,9 +14,10 @@
     "glimpse": "Un vistazo a mis",
     "skills_toolkits": "Habilidades y herramientas",
     "browse_recent": "Revisa mis recientes",
-    "project1_description": "Una aplicación de conjugación de verbos en catalán y español diseñada para estudiantes que no hablan español, creada con SwiftUI en Xcode y potenciada por SQLite.",
-    "project2_description": "Una aplicación de redes sociales creada con React y MongoDB para empoderar e inspirar a las mujeres a nivel mundial. Las características incluyen compartir contenido, comentar y dar 'me gusta', fomentando una comunidad de apoyo con autenticación segura y actualizaciones en tiempo real.",
-    "project3_description": "Con mi primer desarrollo de juegos, creé un juego de memoria utilizando HTML, CSS y JavaScript puro. Esta experiencia interactiva está diseñada para facilitar el aprendizaje de vocabulario en inglés, catalán y español.",
+    "project1_description": "Una aplicación de gestión de tareas para iOS, creada con SwiftUI y Firebase. Incluye autenticación de usuarios, creación y organización de tareas, y una introducción para nuevos usuarios. Asegurada con autenticación basada en la nube y persistencia de datos local.",
+    "project2_description": "Una aplicación de conjugación de verbos en catalán y español diseñada para estudiantes que no hablan español, creada con SwiftUI en Xcode y potenciada por SQLite.",
+    "project3_description": "Una aplicación de redes sociales creada con React y MongoDB para empoderar e inspirar a las mujeres a nivel mundial. Las características incluyen compartir contenido, comentar y dar 'me gusta', fomentando una comunidad de apoyo con autenticación segura y actualizaciones en tiempo real.",
+    "project4_description": "Con mi primer desarrollo de juegos, creé un juego de memoria utilizando HTML, CSS y JavaScript puro. Esta experiencia interactiva está diseñada para facilitar el aprendizaje de vocabulario en inglés, catalán y español.",
     "feel_free": "No dudes en dejarme un mensaje o simplemente",
     "say_hello": "¡Di hola cuando quieras! ✌️",
     "write_me": "Escríbeme"
